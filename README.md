@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# VERTRICAL CODING CHALLENGE APPROACH 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome recruiters. You can find a functional version of the web app at http://ec2-3-88-109-250.compute-1.amazonaws.com/
+i deployed by using an EC2 AWS instance.
 
-## Available Scripts
+To locally run the project, feel free to clone the project, run npm install and npm start!
+I posted in other repository the back end if you want to try it (however it is a running server in AWS) https://github.com/gasanchez10/Vertrical . If you want to try it out locally. Just clone it, install the dependencies and run node server.js
 
-In the project directory, you can run:
+### 1. SEARCH FIELD AND BUTTON 
 
-### `npm start`
+As you can see. The front is a simple implementation. You can type CAR names and trigger the search by using enter or clicking!
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Backend Using Node
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I set up a MongoDB short DB Containing 20 entries of cars (Title, Photo URL, short description and description). 
+My Node server uses a mongoose connection and queries by title in the db using the api 'Search'. The search is basically a SQL LIKE Query migrated version to Mongo and generate good enough results in JSON format. You can type a brand and it will show up to 3 results. 
 
-### `npm test`
+## 3. Object Search
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once you search a brand, lets say Volvo (got mazda bmw mitsubishi and so on in the db), you will get a few cards matching the flexbox styling as a result!
+Click on the title and re route the app (React router) to /Car , get detailed information and go back ! (Thanks god could get it with no reducers XD)
 
-### `npm run build`
+## 4. Testing structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Set up rendering tests and lookforcarmethod test! Further development must be done for real tests using jsx components with jest!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Im happy to learn from you guys and improve my skills!
