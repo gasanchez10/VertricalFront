@@ -1,0 +1,16 @@
+.form-details{
+    height: 100vh;
+    width: 100%;
+    background-color:#010e2b ;
+    border-style: dotted;
+    border-width: 1pt;
+    border-radius: 0pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    color: white !important;
+    font-size: 2vh !important;
+}
+
+.split{margin-bottom: 3% !important;}
